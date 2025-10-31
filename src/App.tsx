@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/mings-chinese-restaurant">
       <div className="app">
         <Navigation />
         <main className="main-content">
