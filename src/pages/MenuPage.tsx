@@ -13,25 +13,32 @@ const MenuPage: React.FC = () => {
     return <div className="menu-page">Category not found</div>;
   }
 
+  // Helper function to render category navigation
+  const renderCategoryNav = (className: string) => (
+    <div className={className}>
+      <Link
+        to="/menu"
+        className={categoryId === 'special' ? 'active' : ''}
+        onClick={() => window.scrollTo(0, 0)}
+      >
+        Special
+      </Link>
+      {menuCategories.filter(cat => cat.id !== 'special').map(cat => (
+        <Link
+          key={cat.id}
+          to={`/menu/${cat.id}`}
+          className={categoryId === cat.id ? 'active' : ''}
+          onClick={() => window.scrollTo(0, 0)}
+        >
+          {cat.name}
+        </Link>
+      ))}
+    </div>
+  );
+
   return (
     <div className="menu-page">
-      <div className="menu-categories-nav">
-        <Link
-          to="/menu"
-          className={categoryId === 'special' ? 'active' : ''}
-        >
-          Special
-        </Link>
-        {menuCategories.filter(cat => cat.id !== 'special').map(cat => (
-          <Link
-            key={cat.id}
-            to={`/menu/${cat.id}`}
-            className={categoryId === cat.id ? 'active' : ''}
-          >
-            {cat.name}
-          </Link>
-        ))}
-      </div>
+      {renderCategoryNav('menu-categories-nav')}
 
       <h1 className="menu-page-title">{menuData.name}</h1>
 
@@ -76,6 +83,8 @@ const MenuPage: React.FC = () => {
           </div>
         )}
       </div>
+
+      {renderCategoryNav('menu-categories-nav-bottom')}
     </div>
   );
 };
