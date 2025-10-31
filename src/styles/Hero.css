@@ -55,13 +55,23 @@
 @media (max-width: 768px) {
   .hero {
     height: 100vh;
+    background-size: cover;
+  }
+
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .hero-content {
+    padding: 1.5rem;
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin: 0 0 0.8rem 0;
   }
 
   .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }

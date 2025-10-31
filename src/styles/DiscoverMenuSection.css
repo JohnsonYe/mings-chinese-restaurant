@@ -46,7 +46,13 @@
 
 @media (max-width: 768px) {
   .discover-menu-section {
-    height: 450px;
+    height: 40vh;
+    min-height: 350px;
+    background-attachment: scroll;
+  }
+
+  .discover-menu-overlay {
+    background: rgba(0, 0, 0, 0.5);
   }
 
   .discover-menu-text {
