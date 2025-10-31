@@ -23,7 +23,7 @@ const MenuPreview: React.FC = () => {
 
   return (
     <section className="menu-preview">
-      <h2 className="menu-preview-title">Sample from Our Menu</h2>
+      <h2 className="menu-preview-title">Sample Menu</h2>
       <div className="menu-items">
         {sampleDishes.map((dish, index) => (
           <div key={index} className="menu-item">

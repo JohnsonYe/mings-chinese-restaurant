@@ -20,7 +20,7 @@
 }
 
 .hero-spacer {
-  height: 720px;
+  height: 100vh;
   width: 100%;
 }
 
@@ -34,6 +34,7 @@
   position: relative;
   z-index: 2;
   background-color: #FAF9F6;
+  padding-bottom: 100px;
 }
 
 .accessibility-statement {
@@ -56,7 +57,7 @@
 
 @media (max-width: 768px) {
   .hero-spacer {
-    height: 450px;
+    height: 100vh;
   }
 
   .accessibility-statement {
