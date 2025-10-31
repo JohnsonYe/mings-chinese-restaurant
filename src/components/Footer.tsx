@@ -24,7 +24,6 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="footer-notices">
-          <p>18% Gratuity will be added to parties with 5 or more people</p>
           <p>Allergy statement: Please let us know if you are allergic to any ingredients</p>
           <p>Kitchen Last Call is 15 minutes before closed.</p>
         </div>
