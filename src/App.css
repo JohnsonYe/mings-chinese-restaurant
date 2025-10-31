@@ -1,0 +1,70 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.divider {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #E5DFD6;
+}
+
+.home-page {
+  background-color: #FAF9F6;
+}
+
+.hero-spacer {
+  height: 720px;
+  width: 100%;
+}
+
+.content-section {
+  position: relative;
+  z-index: 1;
+  background-color: #FAF9F6;
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 2;
+  background-color: #FAF9F6;
+}
+
+.accessibility-statement {
+  max-width: 900px;
+  margin: 4rem auto 0 auto;
+  padding: 2rem;
+  background-color: #F5F3EE;
+  border-radius: 8px;
+  border-left: 4px solid #C5A572;
+  text-align: center;
+}
+
+.accessibility-statement p {
+  font-size: 0.95rem;
+  color: #5C5346;
+  line-height: 1.8;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .hero-spacer {
+    height: 450px;
+  }
+
+  .accessibility-statement {
+    margin: 3rem 1rem 0 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .accessibility-statement p {
+    font-size: 0.9rem;
+  }
+}

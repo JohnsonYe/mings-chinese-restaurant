@@ -1,0 +1,55 @@
+.discover-menu-section {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discover-menu-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.discover-menu-section:hover .discover-menu-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.discover-menu-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.discover-menu-text {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f8f6f0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.discover-menu-link:hover .discover-menu-text {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .discover-menu-section {
+    height: 450px;
+  }
+
+  .discover-menu-text {
+    font-size: 1.5rem;
+  }
+}

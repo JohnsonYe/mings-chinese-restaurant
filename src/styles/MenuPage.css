@@ -1,0 +1,204 @@
+.menu-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem 2rem;
+  min-height: 60vh;
+}
+
+.menu-categories-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 2px solid #E5DFD6;
+}
+
+.menu-categories-nav a {
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  background-color: #F5F3EE;
+  color: #5C5346;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+}
+
+.menu-categories-nav a:hover {
+  background-color: #C5A572;
+  color: #2C2416;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(197, 165, 114, 0.3);
+}
+
+.menu-categories-nav a.active {
+  background-color: #C5A572;
+  color: #2C2416;
+  font-weight: 600;
+}
+
+.menu-page-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2C2416;
+  text-align: center;
+  margin: 0 0 3rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+}
+
+.menu-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.menu-section {
+  margin-bottom: 3.5rem;
+}
+
+.section-title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #C5A572;
+  margin: 0 0 1.8rem 0;
+  padding-bottom: 0.7rem;
+  border-bottom: 3px solid #C5A572;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+}
+
+.menu-items-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.menu-item-row {
+  padding: 1rem;
+  background-color: #F5F3EE;
+  border-radius: 6px;
+  border-left: 3px solid #C5A572;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.menu-item-row:hover {
+  background-color: #EBE8E3;
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(44, 36, 22, 0.12);
+}
+
+.item-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2C2416;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+}
+
+.item-desc {
+  font-size: 0.95rem;
+  color: #5C5346;
+  font-style: italic;
+}
+
+.section-notes {
+  background-color: #FBF8F1;
+  border-left: 4px solid #C5A572;
+  padding: 1.2rem 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 4px;
+}
+
+.section-notes ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.section-notes li {
+  font-size: 0.95rem;
+  color: #5C5346;
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+}
+
+.section-notes li:last-child {
+  margin-bottom: 0;
+}
+
+.menu-bottom-info {
+  max-width: 900px;
+  margin: 4rem auto 0 auto;
+  padding: 2rem;
+  background-color: #F5F3EE;
+  border-radius: 8px;
+  border-top: 3px solid #C5A572;
+  text-align: center;
+}
+
+.menu-bottom-info p {
+  font-size: 0.95rem;
+  color: #5C5346;
+  line-height: 1.8;
+  margin: 0.8rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+}
+
+.menu-bottom-info p:first-child {
+  margin-top: 0;
+}
+
+.menu-bottom-info p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .menu-page {
+    padding: 1.5rem 1rem 3rem 1rem;
+  }
+
+  .menu-categories-nav {
+    gap: 0.7rem;
+    padding: 1rem 0;
+  }
+
+  .menu-categories-nav a {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .menu-page-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .menu-items-list {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-item-row {
+    padding: 0.8rem;
+  }
+
+  .item-name {
+    font-size: 1rem;
+  }
+
+  .menu-bottom-info {
+    margin-top: 3rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .menu-bottom-info p {
+    font-size: 0.9rem;
+  }
+}
