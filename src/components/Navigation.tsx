@@ -17,7 +17,7 @@ const Navigation: React.FC = () => {
     <header className="header">
       <nav className="navigation">
         <Link to="/" className="logo">
-          Mings
+          Mings Chinese Restaurant
         </Link>
         <ul className="nav-menu">
           <li className={isActive('/') && currentPath === '/' ? 'active' : ''}>
